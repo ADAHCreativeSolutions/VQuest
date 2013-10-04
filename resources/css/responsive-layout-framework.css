@@ -1,0 +1,69 @@
+/** 
+Responsive layout frame work for all type of websites
+overided the bootstrap main layout css framework prefix added .wrapper
+**/
+
+	
+	 *{margin:0px;padding:0px;font-size: 100%;}
+ html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+.wrapper{margin: 0 auto;position: relative; width:1100px;}
+.wrapper-fluid{position:relative;width:100%;}
+.wrapper .rw{position:relative;clear:both; padding:0px 0px;}
+.wrapper .sp1{float:left;width:8.33333%}
+.wrapper .sp2{float:left;width:16.66666%}
+.wrapper .sp3{float:left;width:24.99999%}
+.wrapper .sp4{width:33.33332%;float:left;}
+.wrapper .sp5{width:41.66665%;float:left;}
+.wrapper .sp6{width:49.99998%;float:left;}
+.wrapper .sp7{width:58.33331%;float:left;}
+.wrapper .sp8{width:66.66664%;float:left;}
+.wrapper .sp9{width:74.99997%;float:left;}
+.wrapper .sp10{width:83.33333%;float:left;}
+.wrapper .sp11{width:91.66663%;float:left;}
+.wrapper .sp12{width:100%;float:left;}
+.wrapper .sp83{width:22.22222%; float:left;}
+.wrapper .sp73{width:19.44444%; float:left;}
+.wrapper .clear{clear:both;}
+.wrapper [class*="sp"]{min-height:1px;position:relative; margin:0px;}
+.showDiv{background:#eee;position:relative;}
+.showDiv2{background:#d8d8d8;position:relative;}
+
+.visibleDesktop{}
+.visibleTablet{}
+.visiblePhone{}
+/* -----------  Desktops and laptops ----------- */
+@media (max-width : 1200px) {
+	.wrapper{width:1100px;}
+.visibleDesktop{ display:block; visibility:visible;}
+.visibleTablet{ display:none;}
+.visiblePhone{ display:none;}
+}
+/* -----------  Desktops and laptops ----------- */
+
+
+/* ----------- iPads (portrait and landscape) ----------- */
+@media (min-width : 768px) and (max-width : 999px) {
+.wrapper{min-width:768px; max-width:999px;}
+.visibleDesktop{ display:none;}
+.visibleTablet{ display:block; visibility:visible;}
+.visiblePhone{ display:none;}
+}
+
+/* ----------- smartphones ----------- */
+@media (max-width: 767px){
+.wrapper [class*="sp"]{width:100%;clear:both;}
+.visibleDesktop{ display:none;}
+.visibleTablet{ display:none;}
+.visiblePhone{ display:block;
+visibility:visible;}
+}
+
+
+
+
